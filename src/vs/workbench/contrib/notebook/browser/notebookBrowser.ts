@@ -356,8 +356,6 @@ export interface INotebookEditor extends ICommonNotebookEditor {
 
 	cursorNavigationMode: boolean;
 
-	deltaCellStatusBarItems(oldItems: string[], newItems: INotebookDeltaCellStatusBarItems[]): string[];
-
 	/**
 	 * Notebook view model attached to the current editor
 	 */
