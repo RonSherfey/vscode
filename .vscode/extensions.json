@@ -4,6 +4,7 @@
 	"recommendations": [
 		"dbaeumer.vscode-eslint",
 		"editorconfig.editorconfig",
-		"shyykoserhiy.git-autoconfig"
+		"shyykoserhiy.git-autoconfig",
+		"julialang.language-julia"
 	]
 }

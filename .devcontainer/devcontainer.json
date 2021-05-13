@@ -24,7 +24,8 @@
 		"editorconfig.editorconfig",
 		"shyykoserhiy.git-autoconfig",
 		"trailofbits.slither-vscode",
-		"puppet.puppet-vscode"
+		"puppet.puppet-vscode",
+		"julialang.language-julia"
 	],
 
 	// Optionally loads a cached yarn install for the repo
