@@ -2,6 +2,87 @@
 	"version": "0.1.0",
 	"configurations": [
 		{
+			"name": "Arduino",
+			"type": "arduino",
+			"request": "launch",
+			"program": "${file}",
+			"cwd": "${workspaceFolder}",
+			"MIMode": "gdb",
+			"targetArchitecture": "arm",
+			"miDebuggerPath": "",
+			"debugServerPath": "",
+			"debugServerArgs": "",
+			"customLaunchSetupCommands": [
+				{
+					"text": "target remote localhost:3333"
+				},
+				{
+					"text": "file \"${file}\""
+				},
+				{
+					"text": "load"
+				},
+				{
+					"text": "monitor reset halt"
+				},
+				{
+					"text": "monitor reset init"
+				}
+			],
+			"stopAtEntry": true,
+			"serverStarted": "Info\\ :\\ [\\w\\d\\.]*:\\ hardware",
+			"launchCompleteCommand": "exec-continue",
+			"filterStderr": true,
+			"args": []
+		},
+
+		{
+			"type": "bashdb",
+			"request": "launch",
+			"name": "Bash-Debug (hardcoded script name)",
+			"cwd": "${workspaceFolder}",
+			"program": "${workspaceFolder}/path/to/script.sh",
+			"args": []
+		},
+		{
+			"type": "bashdb",
+			"request": "launch",
+			"name": "Bash-Debug (select script from list of sh files)",
+			"cwd": "${workspaceFolder}",
+			"program": "${command:SelectScriptName}",
+			"args": []
+		},
+		{
+			"name": ".NET Core Launch (web)",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "build",
+			"program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"stopAtEntry": false,
+			"serverReadyAction": {
+				"action": "openExternally",
+				"pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+			},
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			},
+			"sourceFileMap": {
+				"/Views": "${workspaceFolder}/Views"
+			}
+		},
+
+
+		{
+			"type": "bashdb",
+			"request": "launch",
+			"name": "Bash-Debug (hardcoded script name)",
+			"cwd": "${workspaceFolder}",
+			"program": "${workspaceFolder}/path/to/script.sh",
+			"args": []
+		},
+		{
 			"type": "node",
 			"request": "launch",
 			"name": "Gulp Build",

@@ -20,7 +20,11 @@
 
 	"extensions": [
 		"dbaeumer.vscode-eslint",
-		"mutantdino.resourcemonitor"
+		"mutantdino.resourcemonitor",
+		"editorconfig.editorconfig",
+		"shyykoserhiy.git-autoconfig",
+		"trailofbits.slither-vscode",
+		"puppet.puppet-vscode"
 	],
 
 	// Optionally loads a cached yarn install for the repo
