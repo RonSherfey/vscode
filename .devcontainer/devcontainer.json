@@ -25,7 +25,8 @@
 		"shyykoserhiy.git-autoconfig",
 		"trailofbits.slither-vscode",
 		"puppet.puppet-vscode",
-		"julialang.language-julia"
+		"julialang.language-julia",
+		"ms-vscode-remote.remote-containers"
 	],
 
 	// Optionally loads a cached yarn install for the repo

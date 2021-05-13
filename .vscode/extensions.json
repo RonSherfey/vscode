@@ -5,6 +5,7 @@
 		"dbaeumer.vscode-eslint",
 		"editorconfig.editorconfig",
 		"shyykoserhiy.git-autoconfig",
-		"julialang.language-julia"
+		"julialang.language-julia",
+		"ms-vscode-remote.remote-containers"
 	]
 }
